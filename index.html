@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Timothy | Cloud Engineer</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial;background:#0a0a0f;min-height:100vh;color:white}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;background-image:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80');background-size:cover;background-position:center;filter:brightness(0.3)}
+.overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:linear-gradient(180deg,rgba(10,10,30,0.5),rgba(10,10,30,0.8))}
+.container{position:relative;z-index:10;max-width:900px;margin:0 auto;padding:40px 20px}
+.header{text-align:center;padding:60px 0 40px}
+.avatar{width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,#e94560,#7b2ff7);display:flex;align-items:center;justify-content:center;font-size:2.5em;margin:0 auto 20px}
+h1{font-size:2.5em;background:linear-gradient(135deg,#e94560,#7b2ff7,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.subtitle{color:rgba(255,255,255,0.5);margin:10px 0;letter-spacing:3px;text-transform:uppercase;font-size:0.85em}
+.location{color:rgba(255,255,255,0.4);font-size:0.9em;margin-top:8px}
+.section{margin:40px 0}
+.section-title{font-size:1.2em;color:#e94560;text-transform:uppercase;letter-spacing:3px;margin-bottom:20px;padding-bottom:8px;border-bottom:1px solid rgba(233,69,96,0.3)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:15px}
+.skill{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;text-align:center}
+.skill-icon{font-size:2em;margin-bottom:8px}
+.skill-name{font-size:0.85em;color:rgba(255,255,255,0.7)}
+.projects{display:grid;gap:15px}
+.project{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px}
+.project-title{color:#00d4ff;font-weight:bold;margin-bottom:8px}
+.project-desc{color:rgba(255,255,255,0.6);font-size:0.9em;line-height:1.6}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tag{background:rgba(123,47,247,0.2);border:1px solid rgba(123,47,247,0.4);padding:4px 12px;border-radius:20px;font-size:0.75em;color:#a78bfa}
+.footer{text-align:center;padding:40px 0;color:rgba(255,255,255,0.3);font-size:0.85em}
+.badge{display:inline-block;background:linear-gradient(135deg,#e94560,#7b2ff7);padding:10px 25px;border-radius:25px;font-weight:bold;margin-top:20px;font-size:0.9em}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="overlay"></div>
+<div class="container">
+    <div class="header">
+        <div class="avatar">T</div>
+        <h1>Timothy Mulungi</h1>
+        <p class="subtitle">Cloud Engineer in Training</p>
+        <p class="location">📍 Kampala, Uganda 🇺🇬</p>
+        <div class="badge">Open to Opportunities</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills">
+            <div class="skill">
+                <div class="skill-icon">🐧</div>
+                <div class="skill-name">Linux (Ubuntu)</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">☁️</div>
+                <div class="skill-name">AWS EC2</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">🐳</div>
+                <div class="skill-name">Docker</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">☸️</div>
+                <div class="skill-name">Kubernetes</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">🔧</div>
+                <div class="skill-name">Git & GitHub</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">🔒</div>
+                <div class="skill-name">SSL/HTTPS</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">⚡</div>
+                <div class="skill-name">Nginx</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">📜</div>
+                <div class="skill-name">Shell Scripts</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Projects</div>
+        <div class="projects">
+            <div class="project">
+                <div class="project-title">Cloud Portfolio Server</div>
+                <div class="project-desc">Deployed a production-ready web server on AWS EC2 with Nginx, secured with SSL certificate and custom domain. Automated server management with shell scripts.</div>
+                <div class="tags">
+                    <span class="tag">AWS EC2</span>
+                    <span class="tag">Nginx</span>
+                    <span class="tag">SSL</span>
+                    <span class="tag">Shell Scripts</span>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-title">Containerized Applications</div>
+                <div class="project-desc">Built and deployed multiple Docker containers including a Python web app and Nginx server. Used Docker Compose to orchestrate multi-container environments. Published images to Docker Hub.</div>
+                <div class="tags">
+                    <span class="tag">Docker</span>
+                    <span class="tag">Docker Compose</span>
+                    <span class="tag">Docker Hub</span>
+                    <span class="tag">Python</span>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-title">Kubernetes Cluster</div>
+                <div class="project-desc">Set up a local Kubernetes cluster using Minikube. Deployed containerized apps, scaled pods up and down, and demonstrated self-healing capabilities.</div>
+                <div class="tags">
+                    <span class="tag">Kubernetes</span>
+                    <span class="tag">Minikube</span>
+                    <span class="tag">kubectl</span>
+                    <span class="tag">Scaling</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Built with Linux, AWS, Docker & Kubernetes</p>
+        <p style="margin-top:8px">github.com/TIMOTHY-glitch-hash | hub.docker.com/u/timothycloud</p>
+    </div>
+</div>
+</body>
+</html>
